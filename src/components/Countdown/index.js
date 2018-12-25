@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Wrapper } from '../../styled'
 
-const CountdownWrapper = styled.section`
+const CountdownWrapper = styled(Wrapper)`
   text-align: center;
-  padding: 32px 0px;
-  background: rgba(0, 0, 0, 0.27);
-  border-radius: 5px;
 `
 
 const CountdownContainer = styled.div`
@@ -13,7 +11,6 @@ const CountdownContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 200px;
-  padding: 0px 36px;
 `
 
 const TimeItem = styled.div`
