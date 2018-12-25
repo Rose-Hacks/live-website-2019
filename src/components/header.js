@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const LogoWrapper = styled.img`
-  height: 75px;
+  height: 50px;
   width: auto;
   margin-bottom: 0px;
 `
@@ -22,15 +22,17 @@ const ActionsWrapper = styled.span`
   margin-left: auto;
 `
 const ActionStyles = css`
-  color: white;
+  font-family: 'Lato', sans-serif;
+  color: #20acc3;
   text-decoration: none;
   margin-left: 12px;
   padding: 6px 12px;
-  border-radius: 10px;
+  border-radius: 4px;
   transition: background 0.2s ease-in-out;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgb(34, 101, 150);
+    color: #00dbff;
   }
 `
 const ActionInternal = styled(Link)`
@@ -70,7 +72,7 @@ const NavItems = [
 
 const Header = ({ siteTitle }) => (
   <Wrapper>
-    <Link to="/">
+    <Link to="/" style={{ height: `50px` }}>
       <LogoWrapper src={Logo} alt="" />
     </Link>
     <ActionsWrapper>
