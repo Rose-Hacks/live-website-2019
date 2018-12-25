@@ -1,4 +1,41 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+
+const CountdownWrapper = styled.div`
+  background: #183059;
+  color: #183059;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  padding: 36px;
+`
+
+const TimeItem = styled.div`
+  background: ${props => props.background};
+  padding: 20px;
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  h2 {
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+  }
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f6f4f3;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+  }
+`
 
 const END_DT = '01/20/2019 12:00'
 
@@ -50,7 +87,7 @@ export default class Countdown extends Component {
     return timeLeft
   }
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.interval = setInterval(() => {
       const date = this.calculateCountdown(END_DT)
 
@@ -74,10 +111,24 @@ export default class Countdown extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Countdown</h1>
-        <p>{this.addLeadingZeros(this.state.sec)}</p>
-      </div>
+      <CountdownWrapper>
+        <TimeItem background="#EF2F3C">
+          <h2>{this.addLeadingZeros(this.state.days)}</h2>
+          <p>days</p>
+        </TimeItem>
+        <TimeItem background="#6EAA4B">
+          <h2>{this.addLeadingZeros(this.state.hours)}</h2>
+          <p>hours</p>
+        </TimeItem>
+        <TimeItem background="#276FBF">
+          <h2>{this.addLeadingZeros(this.state.min)}</h2>
+          <p>minutes</p>
+        </TimeItem>
+        <TimeItem background="#F0A202">
+          <h2>{this.addLeadingZeros(this.state.sec)}</h2>
+          <p>seconds</p>
+        </TimeItem>
+      </CountdownWrapper>
     )
   }
 }
