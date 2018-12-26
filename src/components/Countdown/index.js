@@ -10,15 +10,14 @@ const CountdownContainer = styled.div`
   color: #183059;
   display: flex;
   justify-content: space-between;
-  height: 200px;
 `
 
 const TimeItem = styled.div`
   background: ${props => props.background};
   padding: 20px;
   align-self: center;
-  width: 200px;
-  height: 200px;
+  width: 22%;
+  max-height: 22vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +37,16 @@ const TimeItem = styled.div`
     font-family: 'Lato', sans-serif;
     margin-bottom: 0;
   }
+  @media (max-width: 500px) {
+    padding: 10px 20px;
+
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+  }
 `
 
 const CountdownDescription = styled.h2`
@@ -47,7 +56,7 @@ const CountdownDescription = styled.h2`
   color: #f6f4f3;
   margin-bottom: 0;
   font-size: 1rem;
-  margin-top: 36px;
+  margin-top: 24px;
 `
 
 const END_DT = '01/20/2019 12:00'
