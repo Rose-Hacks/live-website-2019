@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   width: 100%;
   height: 85px;
   align-items: center;
+
+  @media (max-width: 650px) {
+    padding: 0 12px;
+  }
 `
 
 const LogoWrapper = styled.img`
@@ -61,10 +65,16 @@ const NavItems = [
   {
     name: 'Mentors',
     path: '/mentors',
+    classes: 'noMobile',
+  },
+  {
+    name: 'Wi-Fi',
+    path: '/wifi',
   },
   {
     name: 'Slack',
     path: 'https://rosehack2019.slack.com',
+    classes: 'noMobile',
   },
   // {
   //   name: 'Code of Conduct',
@@ -73,6 +83,7 @@ const NavItems = [
   {
     name: 'Submit Project',
     path: 'http://devpost.com',
+    classes: 'noMobile',
   },
 ]
 
@@ -85,7 +96,12 @@ const Header = ({ siteTitle }) => (
       {NavItems.map(item => {
         if (item.path.includes('http')) {
           return (
-            <ActionExternal href={item.path} key={item.path} target="_blank">
+            <ActionExternal
+              href={item.path}
+              key={item.path}
+              target="_blank"
+              className={item.classes}
+            >
               {item.name}
             </ActionExternal>
           )
@@ -95,6 +111,7 @@ const Header = ({ siteTitle }) => (
               to={item.path}
               key={item.path}
               activeStyle={activeStyle}
+              className={item.classes}
             >
               {item.name}
             </ActionInternal>

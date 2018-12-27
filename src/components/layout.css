@@ -625,3 +625,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+@media (max-width: 650px) {
+  .noMobile {
+    display: none;
+  }
+}
