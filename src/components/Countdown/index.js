@@ -24,6 +24,8 @@ const TimeItem = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  flex-grow: 1;
+  margin: 0 12px;
 
   h2 {
     font-size: 5rem;
@@ -64,11 +66,11 @@ const END_DT = '01/20/2019 12:00'
 
 export default class Countdown extends Component {
   state = {
-    years: 0,
-    days: 0,
-    hours: 0,
-    min: 0,
-    sec: 0,
+    years: 1,
+    days: 1,
+    hours: 1,
+    min: 1,
+    sec: 1,
   }
 
   calculateCountdown(endDate) {
@@ -113,7 +115,6 @@ export default class Countdown extends Component {
   componentDidMount = () => {
     this.interval = setInterval(() => {
       const date = this.calculateCountdown(END_DT)
-
       // update the state as long as it's not the end datetime
       // stop the interval once the end datetime is met
       date ? this.setState(date) : clearInterval(this.interval)
@@ -135,19 +136,28 @@ export default class Countdown extends Component {
   render() {
     return (
       <CountdownWrapper>
+        <CountdownDescription style={{ marginTop: 0, marginBottom: `24px` }}>
+          You Have
+        </CountdownDescription>
         <CountdownContainer>
-          <TimeItem background={COLORS.accent1}>
-            <h2>{this.addLeadingZeros(this.state.days)}</h2>
-            <p>days</p>
-          </TimeItem>
-          <TimeItem background={COLORS.accent2}>
-            <h2>{this.addLeadingZeros(this.state.hours)}</h2>
-            <p>hours</p>
-          </TimeItem>
-          <TimeItem background={COLORS.accent3}>
-            <h2>{this.addLeadingZeros(this.state.min)}</h2>
-            <p>minutes</p>
-          </TimeItem>
+          {this.state.days !== 0 && (
+            <TimeItem background={COLORS.accent1}>
+              <h2>{this.addLeadingZeros(this.state.days)}</h2>
+              <p>days</p>
+            </TimeItem>
+          )}
+          {this.state.hours !== 0 && (
+            <TimeItem background={COLORS.accent2}>
+              <h2>{this.addLeadingZeros(this.state.hours)}</h2>
+              <p>hours</p>
+            </TimeItem>
+          )}
+          {this.state.min !== 0 && (
+            <TimeItem background={COLORS.accent3}>
+              <h2>{this.addLeadingZeros(this.state.min)}</h2>
+              <p>minutes</p>
+            </TimeItem>
+          )}
           <TimeItem background={COLORS.accent4}>
             <h2>{this.addLeadingZeros(this.state.sec)}</h2>
             <p>seconds</p>
