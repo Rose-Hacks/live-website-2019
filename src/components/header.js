@@ -59,6 +59,10 @@ const NavItems = [
     path: '/map',
   },
   {
+    name: 'Mentors',
+    path: '/mentors',
+  },
+  {
     name: 'Slack',
     path: 'http://rosehacks.slack.com/',
   },
@@ -66,10 +70,6 @@ const NavItems = [
   //   name: 'Code of Conduct',
   //   path: '/code-of-conduct',
   // },
-  {
-    name: 'Request a Mentor',
-    path: 'http://rosehacks.slack.com/',
-  },
   {
     name: 'Submit Project',
     path: 'http://devpost.com',
