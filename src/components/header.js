@@ -64,7 +64,7 @@ const NavItems = [
   },
   {
     name: 'Slack',
-    path: 'http://rosehacks.slack.com/',
+    path: 'https://rosehack2019.slack.com',
   },
   // {
   //   name: 'Code of Conduct',
