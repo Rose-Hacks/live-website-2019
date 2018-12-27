@@ -1,3 +1,3 @@
 import Wrapper from './Wrapper'
-
-export { Wrapper }
+import { Header } from './Typography'
+export { Wrapper, Header }
