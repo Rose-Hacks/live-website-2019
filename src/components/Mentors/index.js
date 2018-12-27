@@ -112,7 +112,11 @@ export default class Mentors extends Component {
           {this.mentorsSearch().length === 0 && (
             <Prompt>
               <div>
-                <p>😭</p>
+                <p>
+                  <span role="img" aria-label="sad">
+                    😭
+                  </span>
+                </p>
               </div>
               <h1>No mentors with that skill</h1>
               <p>

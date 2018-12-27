@@ -20,6 +20,7 @@ const SocialFeed = () => {
           id="wallsio-iframe"
           src="https://walls.io/yehfq?nobackground=1&amp;show_header=0"
           style={{ border: 0, height: `800px`, width: `100%` }}
+          title="social-wall"
         />
       </Wrapper>
       <script
