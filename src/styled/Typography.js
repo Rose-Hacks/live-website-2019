@@ -15,3 +15,10 @@ export const SubHeader = styled.h3`
   font-weight: 400;
   margin-top: -12px;
 `
+
+export const Channel = styled.a`
+  font-family: 'Lato', sans-serif;
+  color: #f0a202 !important;
+  text-decoration: none;
+  font-weight: 800;
+`

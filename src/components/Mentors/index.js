@@ -1,11 +1,19 @@
 import React, { Component } from 'react'
 import MentorItem from './MentorItem'
 import styled from 'styled-components'
+import { Prompt, Channel } from '../../styled'
 
 const MentorsWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+`
+
+const Input = styled.input`
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 36px;
+  display: block;
+  margin-left: auto;
 `
 
 export default class Mentors extends Component {
@@ -88,18 +96,34 @@ export default class Mentors extends Component {
   }
 
   render() {
-    const { mentors, searchQuery } = this.state
+    const { searchQuery } = this.state
 
     return (
       <>
-        <label style={{ color: `white` }}>
-          Search for a skill
-          <input onChange={this.onChangeSearch} value={searchQuery} />
-        </label>
+        <Input
+          onChange={this.onChangeSearch}
+          value={searchQuery}
+          placeholder="javascript"
+        />
         <MentorsWrapper>
           {this.mentorsSearch().map(mentor => (
             <MentorItem mentor={mentor} />
           ))}
+          {this.mentorsSearch().length === 0 && (
+            <Prompt>
+              <div>
+                <p>😭</p>
+              </div>
+              <h1>No mentors with that skill</h1>
+              <p>
+                Ask for help in the{' '}
+                <Channel href="https://rosehack2019.slack.com/messages/CEZTAFJG0/">
+                  #mentors
+                </Channel>{' '}
+                channel on Slack.
+              </p>
+            </Prompt>
+          )}
         </MentorsWrapper>
       </>
     )
