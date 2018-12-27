@@ -35,6 +35,7 @@ const ActionStyles = css`
     color: #00dbff;
   }
 `
+
 const ActionInternal = styled(Link)`
   ${ActionStyles}
 `
@@ -42,6 +43,11 @@ const ActionInternal = styled(Link)`
 const ActionExternal = styled.a`
   ${ActionStyles}
 `
+
+const activeStyle = {
+  background: `rgb(34, 101, 150)`,
+  color: `#00dbff`,
+}
 
 const NavItems = [
   {
@@ -85,7 +91,11 @@ const Header = ({ siteTitle }) => (
           )
         } else {
           return (
-            <ActionInternal to={item.path} key={item.path}>
+            <ActionInternal
+              to={item.path}
+              key={item.path}
+              activeStyle={activeStyle}
+            >
               {item.name}
             </ActionInternal>
           )
