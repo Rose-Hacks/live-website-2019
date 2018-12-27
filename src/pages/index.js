@@ -7,7 +7,7 @@ import ActionIcons from '../components/ActionIcons'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`event`, `live`, `portal`]} />
 
     <Countdown />
     <ActionIcons />
