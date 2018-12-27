@@ -15,8 +15,16 @@ const Wrapper = styled.section`
     line-height: 1.3;
   }
 
-  p:last-of-type {
+  p:last-of-type,
+  ul,
+  ol,
+  li:last-of-type {
     margin-bottom: 0;
+  }
+
+  a {
+    color: #20acc3;
+    text-decoration: none;
   }
 `
 

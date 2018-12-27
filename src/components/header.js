@@ -55,6 +55,11 @@ const activeStyle = {
 
 const NavItems = [
   {
+    name: 'Get Started',
+    path: '/getting-started',
+    classes: 'noMobile',
+  },
+  {
     name: 'Schedule',
     path: '/schedule',
   },
