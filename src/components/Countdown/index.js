@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Wrapper } from '../../styled'
+import * as COLORS from '../../globals/color'
 
 const CountdownWrapper = styled(Wrapper)`
   text-align: center;
@@ -135,19 +136,19 @@ export default class Countdown extends Component {
     return (
       <CountdownWrapper>
         <CountdownContainer>
-          <TimeItem background="#EF2F3C">
+          <TimeItem background={COLORS.accent1}>
             <h2>{this.addLeadingZeros(this.state.days)}</h2>
             <p>days</p>
           </TimeItem>
-          <TimeItem background="#6EAA4B">
+          <TimeItem background={COLORS.accent2}>
             <h2>{this.addLeadingZeros(this.state.hours)}</h2>
             <p>hours</p>
           </TimeItem>
-          <TimeItem background="#276FBF">
+          <TimeItem background={COLORS.accent3}>
             <h2>{this.addLeadingZeros(this.state.min)}</h2>
             <p>minutes</p>
           </TimeItem>
-          <TimeItem background="#F0A202">
+          <TimeItem background={COLORS.accent4}>
             <h2>{this.addLeadingZeros(this.state.sec)}</h2>
             <p>seconds</p>
           </TimeItem>
