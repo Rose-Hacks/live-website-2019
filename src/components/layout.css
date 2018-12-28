@@ -626,8 +626,15 @@ pre tt:after {
   }
 }
 
+.showMobile {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .noMobile {
     display: none;
+  }
+  .showMobile {
+    display: block;
   }
 }
