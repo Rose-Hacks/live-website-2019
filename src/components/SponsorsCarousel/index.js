@@ -329,10 +329,10 @@ export default class SponsorCarousel extends Component {
 
   render() {
     return (
-      <Footer>
+      <Footer className="noMobile">
         <Carousel
           autoplay={true}
-          autoplayInterval={500}
+          autoplayInterval={1500}
           cellSpacing={30}
           initialSlideHeight={200}
           disableKeyboardControls={true}

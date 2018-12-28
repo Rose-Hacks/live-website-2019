@@ -39,9 +39,11 @@ const TimeItem = styled.div`
     color: #f6f4f3;
     font-family: 'Lato', sans-serif;
     margin-bottom: 0;
+    font-size: 2vw;
   }
   @media (max-width: 500px) {
     padding: 10px 20px;
+    margin: 0 6px;
 
     h2 {
       font-size: 3rem;
