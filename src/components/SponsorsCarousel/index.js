@@ -22,7 +22,7 @@ const Logo = styled.img`
 `
 
 const BASE_IMAGE_URL =
-  'https://res.cloudinary.com/rosehack/image/upload/v1545893335/'
+  'https://res.cloudinary.com/rosehack/image/upload/h_50,q_auto,f_auto,dpr_auto'
 
 export default class SponsorCarousel extends Component {
   state = {
@@ -328,6 +328,8 @@ export default class SponsorCarousel extends Component {
   }
 
   render() {
+    const { sponsors } = this.state
+
     return (
       <Footer className="noMobile">
         <Carousel
@@ -341,8 +343,9 @@ export default class SponsorCarousel extends Component {
           wrapAround={true}
           slideWidth="200px"
           cellAlign={'center'}
+          slideIndex={Math.floor(sponsors.length / 2)}
         >
-          {this.state.sponsors.map(sponsor => {
+          {sponsors.map(sponsor => {
             return (
               <Logo
                 src={`${BASE_IMAGE_URL}/${sponsor.public_id}`}
