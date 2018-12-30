@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import Logo from '../images/logo.png'
+const Logo =
+  'https://res.cloudinary.com/rosehack/image/upload/f_auto,dpr_auto,h_100/logo.png'
 
 const Wrapper = styled.div`
   display: flex;
