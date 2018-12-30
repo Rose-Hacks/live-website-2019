@@ -29,5 +29,20 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-124411502-2',
+        // Puts tracking script in the head instead of the body
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'rosehack.com',
+      },
+    },
   ],
 }
