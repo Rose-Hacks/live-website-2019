@@ -23,13 +23,11 @@ module.exports = {
         start_url: `/`,
         background_color: `#acccec`,
         theme_color: `#acccec`,
-        display: `Rose Hack`,
+        display: `standalone`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 }
