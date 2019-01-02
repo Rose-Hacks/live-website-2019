@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Carousel from 'nuka-carousel'
 
 const Footer = styled.footer`
-  background: #276fbf;
+  background: #2a1d66;
   height: 50px;
   position: fixed;
   bottom: 0;

@@ -28,7 +28,7 @@ const ActionsWrapper = styled.span`
 `
 const ActionStyles = css`
   font-family: 'Lato', sans-serif;
-  color: #20acc3;
+  color: #dac6d5;
   text-decoration: none;
   margin-left: 12px;
   padding: 6px 12px;
@@ -36,8 +36,8 @@ const ActionStyles = css`
   transition: background 0.2s ease-in-out;
 
   &:hover {
-    background: rgb(34, 101, 150);
-    color: #00dbff;
+    background: rgb(140, 87, 125);
+    color: #fff;
   }
 `
 
@@ -50,8 +50,8 @@ const ActionExternal = styled.a`
 `
 
 const activeStyle = {
-  background: `rgb(34, 101, 150)`,
-  color: `#00dbff`,
+  background: 'rgb(140, 87, 125)',
+  color: '#fff',
 }
 
 const NavItems = [

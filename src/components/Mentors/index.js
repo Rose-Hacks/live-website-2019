@@ -121,7 +121,10 @@ export default class Mentors extends Component {
               <h1>No mentors with that skill</h1>
               <p>
                 Ask for help in the{' '}
-                <Channel href="https://rosehack2019.slack.com/messages/CEZTAFJG0/">
+                <Channel
+                  href="https://rosehack2019.slack.com/messages/CEZTAFJG0/"
+                  target="_blank"
+                >
                   #mentors
                 </Channel>{' '}
                 channel on Slack.

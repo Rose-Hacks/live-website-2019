@@ -6,9 +6,15 @@ const Hashtag = styled.span`
   color: #00fff6;
 `
 
+const SocialFeedWrapper = styled.section`
+  @media (max-width: 600px) {
+    display: none;
+  }
+`
+
 const SocialFeed = () => {
   return (
-    <>
+    <SocialFeedWrapper>
       <Header>Social</Header>
       <SubHeader>
         Use <Hashtag>#rosehack2019</Hashtag> on social media to be featured
@@ -31,7 +37,7 @@ const SocialFeed = () => {
         data-height="800"
         data-lazyload="1"
       />
-    </>
+    </SocialFeedWrapper>
   )
 }
 

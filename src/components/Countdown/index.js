@@ -28,9 +28,10 @@ const TimeItem = styled.div`
   margin: 0 12px;
 
   h2 {
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0px;
+    color: #2d2d2d;
   }
 
   p {
@@ -39,7 +40,7 @@ const TimeItem = styled.div`
     color: #f6f4f3;
     font-family: 'Lato', sans-serif;
     margin-bottom: 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   @media (max-width: 500px) {
     padding: 10px 20px;

@@ -16,7 +16,10 @@ const GettingStartedPage = () => (
       </p>
       <p>
         Don't know where to get started? Check out the resources below for free
-        stuff you can use in your projects and tutorials. 👇
+        stuff you can use in your projects and tutorials.{' '}
+        <span role="img" aria-label="down">
+          👇
+        </span>
       </p>
     </Wrapper>
 

@@ -25,5 +25,5 @@ export const Channel = styled.a`
 
 export const Emphasis = styled.span`
   font-family: 'Lato', sans-serif;
-  color: #6eaa4b !important;
+  color: #7fdafe !important;
 `

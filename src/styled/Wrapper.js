@@ -23,8 +23,12 @@ const Wrapper = styled.section`
   }
 
   a {
-    color: #20acc3;
+    color: #c88eff;
     text-decoration: none;
+  }
+
+  @media (max-width: 1000px) {
+    margin: 24px;
   }
 `
 

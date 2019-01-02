@@ -6,7 +6,7 @@ const MentorCard = styled.div`
   width: 400px;
   margin-bottom: 24px;
   border-radius: 4px;
-  border-top: 6px solid #ef2f3c;
+  border-top: 6px solid #e68dcb;
   position: relative;
 `
 
@@ -32,7 +32,7 @@ const SkillsContainer = styled.div`
 
 const Skill = styled.div`
   font-family: Lato, sans-serif;
-  background: #276fbf;
+  background: #89647b;
   padding: 5px;
   border-radius: 4px;
   margin-right: 6px;
@@ -42,7 +42,7 @@ const Skill = styled.div`
 
 const ContactButton = styled.div`
   font-family: Montserrat, sans-serif;
-  background: #f0a202;
+  background: #775b95;
   position: absolute;
   width: 100%;
   color: white;

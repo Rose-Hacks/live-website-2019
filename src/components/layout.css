@@ -4,7 +4,10 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: #183059;
+  /* background: #183059; */
+  background: linear-gradient(100deg, #82476a, #120843);
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 body {
   margin: 0;
