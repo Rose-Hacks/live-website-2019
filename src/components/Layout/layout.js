@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import Header from './header'
-import SponsorCarousel from '../components/SponsorsCarousel'
+import Header from '../header'
+import SponsorCarousel from '../SponsorsCarousel'
 import './layout.css'
 
 const Wrapper = styled.div`
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
       <>
         <Wrapper>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div>{children}</div>
+          <>{children}</>
         </Wrapper>
         <SponsorCarousel />
       </>

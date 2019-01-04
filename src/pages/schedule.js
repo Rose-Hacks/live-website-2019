@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/Layout/layout'
 import SEO from '../components/seo'
 import Schedule from '../components/Schedule'
 import { Header } from '../styled'

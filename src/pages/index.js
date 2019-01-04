@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout/HomeLayout'
 import SEO from '../components/seo'
 import Countdown from '../components/Countdown'
 import SocialFeed from '../components/SocialFeed'
