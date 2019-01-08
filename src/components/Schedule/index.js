@@ -3,6 +3,7 @@ import Timeline, {
   defaultSubHeaderLabelFormats,
   TimelineMarkers,
   CustomMarker,
+  TodayMarker,
 } from 'react-calendar-timeline'
 import './schedule.css'
 import moment from 'moment'
@@ -21,62 +22,217 @@ const usSubHeaderLabelFormats = Object.assign(
 const groups = [
   { id: 1, title: 'Bytes' },
   { id: 2, title: 'Chung 138' },
-  { id: 3, title: 'Chung 142' },
-  { id: 4, title: 'Chung 143' },
-  { id: 5, title: 'Chung 144' },
-  { id: 6, title: 'Chung 145' },
-  { id: 7, title: 'Chung 205/206' },
+  { id: 3, title: 'Chung 205/206' },
+  { id: 4, title: 'Chung 142' },
+  { id: 5, title: 'Chung 143' },
+  { id: 6, title: 'Chung 144' },
+  { id: 7, title: 'Chung 145' },
+  { id: 8, title: 'Chung Patio' },
 ]
 
 const items = [
   {
-    id: 1,
+    id: 0,
     group: 1,
-    title: 'item 1',
-    start_time: moment('1/19/2018 8:00'),
+    title: 'Check In & Breakfast',
+    start_time: moment('1/19/2018 9:00'),
     end_time: moment('1/19/2018 10:00'),
   },
   {
     id: 2,
     group: 2,
-    title: 'item 2',
-    start_time: moment('1/19/2018 10:00'),
-    end_time: moment('1/19/2018 14:00'),
+    title: 'Opening Ceremony',
+    start_time: moment('1/19/2018 10:30'),
+    end_time: moment('1/19/2018 11:55'),
   },
   {
     id: 3,
     group: 1,
-    title: 'item 3',
-    start_time: moment('1/19/2018 8:00'),
-    end_time: moment('1/19/2018 16:00'),
-  },
-  {
-    id: 3,
-    group: 1,
-    title: 'Workshop',
-    start_time: moment(),
-    end_time: moment().add(+2, 'hours'),
+    title: 'Lunch',
+    start_time: moment('1/19/2018 12:00'),
+    end_time: moment('1/19/2018 13:00'),
   },
   {
     id: 4,
-    group: 2,
-    title: 'Face Masks with Wendy',
-    start_time: moment().add(-2, 'hours'),
-    end_time: moment().add(+4, 'hours'),
+    group: 3,
+    title: 'Sponsors Room Open',
+    start_time: moment('1/19/2018 12:00'),
+    end_time: moment('1/19/2018 17:00'),
   },
   {
     id: 5,
-    group: 4,
-    title: 'Aaroh Raps',
-    start_time: moment().add(-1, 'hours'),
-    end_time: moment().add(+3, 'hours'),
+    group: 2,
+    title: 'Team Building',
+    start_time: moment('1/19/2018 12:00'),
+    end_time: moment('1/19/2018 12:30'),
   },
   {
     id: 6,
     group: 5,
-    title: 'Patrick vapes',
-    start_time: moment().add(-1, 'hours'),
-    end_time: moment().add(+3, 'hours'),
+    title: 'Intro to Git & GitHub Workshop',
+    start_time: moment('1/19/2018 12:30'),
+    end_time: moment('1/19/2018 13:30'),
+  },
+  {
+    id: 7,
+    group: 4,
+    title: 'Android Development Workshop',
+    start_time: moment('1/19/2018 13:30'),
+    end_time: moment('1/19/2018 14:30'),
+  },
+  {
+    id: 8,
+    group: 6,
+    title: 'iOS Development Workshop',
+    start_time: moment('1/19/2018 13:30'),
+    end_time: moment('1/19/2018 14:30'),
+  },
+  {
+    id: 9,
+    group: 7,
+    title: 'Game Design Workshop',
+    start_time: moment('1/19/2018 14:30'),
+    end_time: moment('1/19/2018 15:30'),
+  },
+  {
+    id: 10,
+    group: 5,
+    title: 'Web Development Workshop',
+    start_time: moment('1/19/2018 14:30'),
+    end_time: moment('1/19/2018 15:30'),
+  },
+  {
+    id: 11,
+    group: 6,
+    title: 'Data Science Workshop',
+    start_time: moment('1/19/2018 15:30'),
+    end_time: moment('1/19/2018 16:30'),
+  },
+  {
+    id: 12,
+    group: 4,
+    title: "Esri's GIS Workshop",
+    start_time: moment('1/19/2018 15:30'),
+    end_time: moment('1/19/2018 16:30'),
+  },
+  {
+    id: 13,
+    group: 7,
+    title: "mongoDB's Build a Web App with MongoDB Workshop",
+    start_time: moment('1/19/2018 16:30'),
+    end_time: moment('1/19/2018 17:30'),
+  },
+  {
+    id: 14,
+    group: 5,
+    title: "Google's Tech Talk",
+    start_time: moment('1/19/2018 16:30'),
+    end_time: moment('1/19/2018 17:30'),
+  },
+  {
+    id: 15,
+    group: 4,
+    title: "Auth0's Security Workshop",
+    start_time: moment('1/19/2018 17:30'),
+    end_time: moment('1/19/2018 18:30'),
+  },
+  {
+    id: 16,
+    group: 1,
+    title: 'Dinner',
+    start_time: moment('1/19/2018 18:30'),
+    end_time: moment('1/19/2018 20:00'),
+  },
+  {
+    id: 17,
+    group: 4,
+    title: 'Group Therapy',
+    start_time: moment('1/19/2018 21:00'),
+    end_time: moment('1/19/2018 22:00'),
+  },
+  {
+    id: 18,
+    group: 2,
+    title: "MLH's Cup Stacking",
+    start_time: moment('1/19/2018 23:00'),
+    end_time: moment('1/20/2018 00:00'),
+  },
+  {
+    id: 19,
+    group: 1,
+    title: 'Midnight Face Masks',
+    start_time: moment('1/20/2018 00:00'),
+    end_time: moment('1/20/2018 01:00'),
+  },
+  {
+    id: 20,
+    group: 5,
+    title: "Ocean's 8 Movie Showing",
+    start_time: moment('1/20/2018 01:30'),
+    end_time: moment('1/20/2018 03:00'),
+  },
+  {
+    id: 21,
+    group: 8,
+    title: 'Swag Pinata',
+    start_time: moment('1/20/2018 04:00'),
+    end_time: moment('1/20/2018 05:00'),
+  },
+  {
+    id: 22,
+    group: 8,
+    title: 'Morning Yoga',
+    start_time: moment('1/20/2018 07:00'),
+    end_time: moment('1/20/2018 08:00'),
+  },
+  {
+    id: 23,
+    group: 1,
+    title: 'Breakfast',
+    start_time: moment('1/20/2018 08:00'),
+    end_time: moment('1/20/2018 09:30'),
+  },
+  {
+    id: 24,
+    group: 6,
+    title: 'UI/UX Workshop',
+    start_time: moment('1/20/2018 08:00'),
+    end_time: moment('1/20/2018 09:00'),
+  },
+  {
+    id: 25,
+    group: 4,
+    title: 'Technical Interview Workshop',
+    start_time: moment('1/20/2018 09:00'),
+    end_time: moment('1/20/2018 10:00'),
+  },
+  {
+    id: 26,
+    group: 7,
+    title: 'Women in Tech Panel',
+    start_time: moment('1/20/2018 10:00'),
+    end_time: moment('1/20/2018 11:00'),
+  },
+  {
+    id: 27,
+    group: 1,
+    title: 'Lunch',
+    start_time: moment('1/20/2018 12:00'),
+    end_time: moment('1/20/2018 13:00'),
+  },
+  {
+    id: 28,
+    group: 2,
+    title: 'Demos',
+    start_time: moment('1/20/2018 13:00'),
+    end_time: moment('1/20/2018 14:30'),
+  },
+  {
+    id: 29,
+    group: 2,
+    title: 'Closing Ceremony',
+    start_time: moment('1/20/2018 15:00'),
+    end_time: moment('1/20/2018 16:00'),
   },
 ]
 
@@ -89,20 +245,20 @@ const Schedule = () => (
       items={items}
       // defaultTimeStart={moment('1/19/2018 8:00')}
       // defaultTimeEnd={moment('1/20/2018 17:00')}
-      defaultTimeStart={moment().add(-2, 'hour')}
-      defaultTimeEnd={moment().add(4, 'hour')}
+      defaultTimeStart={moment('1/19/2018 7:00')}
+      defaultTimeEnd={moment('1/19/2018 10:00')}
       dragSnap
       lineHeight={64}
       minZoom={60 * 60 * 1000 * 4}
       canMove={false}
       canChangeGroup={false}
-      //   stackItems={true}
+      stackItems={true}
       timeSteps={{ second: 1, minute: 30, hour: 1, day: 1, month: 1, year: 1 }}
       //   style={{ background: `#e4e4e4` }}
     >
       <TimelineMarkers>
-        {/* <TodayMarker /> */}
-        <CustomMarker date={moment().add(+2, 'hour')} />
+        <TodayMarker />
+        {/* <CustomMarker date={moment().add(+2, 'hour')} /> */}
         {/* <CustomMarker date={moment()}>
           ({date}) => {<div style={styles} />}
         </CustomMarker> */}
