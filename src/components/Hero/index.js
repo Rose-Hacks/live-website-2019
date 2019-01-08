@@ -7,6 +7,7 @@ const HeroContainer = styled.section`
   background: linear-gradient(100deg, #574565, #27346a);
   background-repeat: no-repeat;
   width: 100%;
+  height: 85vh;
   div {
     display: flex;
 

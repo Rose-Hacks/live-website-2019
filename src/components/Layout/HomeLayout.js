@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const NavWrapper = styled.div`
   position: absolute;
   width: 100%;
+  z-index: 5;
 `
 
 const HomeLayout = ({ children }) => (
