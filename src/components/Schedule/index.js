@@ -7,7 +7,9 @@ import Timeline, {
 } from 'react-calendar-timeline'
 import './schedule.css'
 import moment from 'moment'
-import { Wrapper } from '../../styled'
+import { Wrapper, Header } from '../../styled'
+import Agenda from './Agenda'
+import Events from './events'
 
 const usSubHeaderLabelFormats = Object.assign(
   {},
@@ -264,6 +266,9 @@ const Schedule = () => (
         </CustomMarker> */}
       </TimelineMarkers>
     </Timeline>
+
+    <Header>Agenda View</Header>
+    <Agenda events={Events} />
   </Wrapper>
 )
 
