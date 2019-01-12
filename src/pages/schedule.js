@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/Layout/layout'
 import SEO from '../components/seo'
-import Schedule from '../components/Schedule'
+// import Schedule from '../components/Schedule'
+import Schedule from '../components/Schedule/schedule'
 import { Header } from '../styled'
 
 const SchedulePage = () => (
