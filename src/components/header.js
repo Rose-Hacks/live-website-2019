@@ -65,6 +65,10 @@ const NavItems = [
     path: '/schedule',
   },
   {
+    name: 'Directions',
+    path: '/directions',
+  },
+  {
     name: 'Map',
     path: '/map',
   },
