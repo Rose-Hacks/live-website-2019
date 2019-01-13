@@ -10,15 +10,15 @@ import { Link } from 'gatsby'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`event`, `live`, `portal`]} />
-    <Header>Rose Hack 2019</Header>
+    {/* <Header>Rose Hack 2019</Header> */}
     <Wrapper className="showMobile">
       <p>
         Need access to Wi-Fi? Head over to the{' '}
         <Link to="/wifi">request page</Link>.
       </p>
     </Wrapper>
-    <Countdown />
-    <SocialFeed />
+    {/* <Countdown /> */}
+    {/* <SocialFeed /> */}
   </Layout>
 )
 

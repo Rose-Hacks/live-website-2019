@@ -72,15 +72,15 @@ const NavItems = [
     name: 'Map',
     path: '/map',
   },
-  {
-    name: 'Mentors',
-    path: '/mentors',
-    classes: 'noMobile',
-  },
-  {
-    name: 'Wi-Fi',
-    path: '/wifi',
-  },
+  // {
+  //   name: 'Mentors',
+  //   path: '/mentors',
+  //   classes: 'noMobile',
+  // },
+  // {
+  //   name: 'Wi-Fi',
+  //   path: '/wifi',
+  // },
   {
     name: 'Slack',
     path: 'https://rosehack2019.slack.com',
@@ -90,11 +90,11 @@ const NavItems = [
   //   name: 'Code of Conduct',
   //   path: '/code-of-conduct',
   // },
-  {
-    name: 'Submit Project',
-    path: 'http://devpost.com',
-    classes: 'noMobile',
-  },
+  // {
+  //   name: 'Submit Project',
+  //   path: 'http://devpost.com',
+  //   classes: 'noMobile',
+  // },
 ]
 
 const Header = ({ siteTitle }) => (
