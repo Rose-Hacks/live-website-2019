@@ -54,6 +54,21 @@ const activeStyle = {
   color: '#fff',
 }
 
+const LogoContainer = styled(Link)`
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  h2 {
+    margin: 0;
+    margin-left: 12px;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+`
+
 const NavItems = [
   {
     name: 'Get Started',
@@ -99,9 +114,10 @@ const NavItems = [
 
 const Header = ({ siteTitle }) => (
   <Wrapper>
-    <Link to="/" style={{ height: `50px` }}>
+    <LogoContainer to="/">
       <LogoWrapper src={Logo} alt="" />
-    </Link>
+      <h2>Rose Hack</h2>
+    </LogoContainer>
     <ActionsWrapper>
       {NavItems.map(item => {
         if (item.path.includes('http')) {

@@ -10,6 +10,7 @@ const Footer = styled.footer`
   bottom: 0;
   display: flex;
   align-items: center;
+  z-index: 500;
 
   h1 {
     margin-bottom: 0;

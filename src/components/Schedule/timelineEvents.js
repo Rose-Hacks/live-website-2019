@@ -5,6 +5,7 @@ export default [
     title: 'Check In & Breakfast',
     start: new Date('1/19/2019 9:00'),
     end: new Date('1/19/2019 11:00'),
+    type: 'Logistic',
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export default [
     title: 'Opening Ceremony',
     start: new Date('1/19/2019 10:30'),
     end: new Date('1/19/2019 12:00'),
+    type: 'Logistic',
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export default [
     title: 'Lunch',
     start: new Date('1/19/2019 12:00'),
     end: new Date('1/19/2019 13:00'),
+    type: 'Food',
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export default [
     title: 'Sponsors Room Open',
     start: new Date('1/19/2019 12:00'),
     end: new Date('1/19/2019 17:00'),
+    type: 'Logistic',
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export default [
     title: 'Team Building',
     start: new Date('1/19/2019 12:00'),
     end: new Date('1/19/2019 12:30'),
+    type: 'Logistic',
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export default [
     title: 'Intro to Git & GitHub Workshop',
     start: new Date('1/19/2019 12:30'),
     end: new Date('1/19/2019 13:30'),
+    type: 'Workshop',
   },
   {
     id: 7,
@@ -47,13 +53,15 @@ export default [
     title: 'Android Development Workshop',
     start: new Date('1/19/2019 13:30'),
     end: new Date('1/19/2019 14:30'),
+    type: 'Workshop',
   },
   {
     id: 8,
-    resourceId: 'Chung 141',
+    resourceId: 'Chung 144',
     title: 'iOS Development Workshop',
     start: new Date('1/19/2019 13:30'),
     end: new Date('1/19/2019 14:30'),
+    type: 'Workshop',
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export default [
     title: 'Game Design Workshop',
     start: new Date('1/19/2019 14:30'),
     end: new Date('1/19/2019 15:30'),
+    type: 'Workshop',
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ export default [
     title: 'Web Development Workshop',
     start: new Date('1/19/2019 14:30'),
     end: new Date('1/19/2019 15:30'),
+    type: 'Workshop',
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ export default [
     title: 'Data Science Workshop',
     start: new Date('1/19/2019 15:30'),
     end: new Date('1/19/2019 16:30'),
+    type: 'Workshop',
   },
   {
     id: 12,
@@ -82,13 +93,15 @@ export default [
     title: "Esri's GIS Workshop",
     start: new Date('1/19/2019 15:30'),
     end: new Date('1/19/2019 16:30'),
+    type: 'Workshop',
   },
   {
     id: 13,
-    resourceId: 'Chung 139',
+    resourceId: 'Chung 145',
     title: "MongoDB's Build a Web App with MongoDB Workshop",
     start: new Date('1/19/2019 16:30'),
     end: new Date('1/19/2019 17:30'),
+    type: 'Workshop',
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ export default [
     title: "Google's Tech Talk",
     start: new Date('1/19/2019 16:30'),
     end: new Date('1/19/2019 17:30'),
+    type: 'Workshop',
   },
   {
     id: 15,
@@ -103,6 +117,7 @@ export default [
     title: "Auth0's Security Workshop",
     start: new Date('1/19/2019 17:30'),
     end: new Date('1/19/2019 18:30'),
+    type: 'Workshop',
   },
   {
     id: 16,
@@ -110,6 +125,7 @@ export default [
     title: 'Dinner',
     start: new Date('1/19/2019 18:30'),
     end: new Date('1/19/2019 20:00'),
+    type: 'Food',
   },
   {
     id: 17,
@@ -117,13 +133,15 @@ export default [
     title: 'Group Therapy',
     start: new Date('1/19/2019 21:00'),
     end: new Date('1/19/2019 22:00'),
+    type: 'Activity',
   },
   {
     id: 18,
-    resourceId: 'Chung 138',
+    resourceId: 'Chung 205/206',
     title: "MLH's Cup Stacking",
     start: new Date('1/19/2019 23:00'),
     end: new Date('1/20/2019 00:00'),
+    type: 'Activity',
   },
   {
     id: 19,
@@ -131,6 +149,7 @@ export default [
     title: 'Midnight Face Masks',
     start: new Date('1/20/2019 00:00'),
     end: new Date('1/20/2019 01:00'),
+    type: 'Activity',
   },
   {
     id: 20,
@@ -138,6 +157,7 @@ export default [
     title: "Ocean's 8 Movie Showing",
     start: new Date('1/20/2019 01:30'),
     end: new Date('1/20/2019 03:00'),
+    type: 'Activity',
   },
   {
     id: 21,
@@ -145,6 +165,7 @@ export default [
     title: 'Swag Pinata',
     start: new Date('1/20/2019 04:00'),
     end: new Date('1/20/2019 05:00'),
+    type: 'Activity',
   },
   {
     id: 22,
@@ -152,6 +173,7 @@ export default [
     title: 'Morning Yoga',
     start: new Date('1/20/2019 07:00'),
     end: new Date('1/20/2019 08:00'),
+    type: 'Activity',
   },
   {
     id: 23,
@@ -159,6 +181,7 @@ export default [
     title: 'Breakfast',
     start: new Date('1/20/2019 08:00'),
     end: new Date('1/20/2019 09:30'),
+    type: 'Food',
   },
   {
     id: 24,
@@ -166,6 +189,7 @@ export default [
     title: 'UI/UX Workshop',
     start: new Date('1/20/2019 08:00'),
     end: new Date('1/20/2019 09:00'),
+    type: 'Workshop',
   },
   {
     id: 25,
@@ -173,13 +197,15 @@ export default [
     title: 'Technical Interview Workshop',
     start: new Date('1/20/2019 09:00'),
     end: new Date('1/20/2019 10:00'),
+    type: 'Workshop',
   },
   {
     id: 26,
-    resourceId: 'Chung 139',
+    resourceId: 'Chung 145',
     title: 'Women in Tech Panel',
     start: new Date('1/20/2019 10:00'),
     end: new Date('1/20/2019 11:00'),
+    type: 'Activity',
   },
   {
     id: 27,
@@ -187,6 +213,7 @@ export default [
     title: 'Lunch',
     start: new Date('1/20/2019 12:00'),
     end: new Date('1/20/2019 13:00'),
+    type: 'Food',
   },
   {
     id: 28,
@@ -194,6 +221,7 @@ export default [
     title: 'Demos',
     start: new Date('1/20/2019 13:00'),
     end: new Date('1/20/2019 14:30'),
+    type: 'Logistic',
   },
   {
     id: 29,
@@ -201,5 +229,6 @@ export default [
     title: 'Closing Ceremony',
     start: new Date('1/20/2019 15:00'),
     end: new Date('1/20/2019 16:00'),
+    type: 'Logistic',
   },
 ]

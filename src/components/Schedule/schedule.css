@@ -36,9 +36,24 @@
 
 .rct-item {
   font-family: 'Lato', sans-serif;
-  background: #ef2f3cb3 !important;
-  border: none !important;
+  /* background: #ef2f3cb3 !important; */
+  /* border: 2px solid black !important; */
   font-size: 1rem !important;
+}
+
+.logistic {
+  background: #f6511d !important;
+}
+.food {
+  background: #00a6ed !important;
+}
+
+.workshop {
+  background: #7fb800 !important;
+}
+
+.activity {
+  background: #ffb400 !important;
 }
 
 .react-calendar-timeline .rct-header-container {

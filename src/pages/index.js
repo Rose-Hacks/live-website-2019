@@ -11,12 +11,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`event`, `live`, `portal`]} />
     {/* <Header>Rose Hack 2019</Header> */}
-    <Wrapper className="showMobile">
+    {/* <Wrapper className="showMobile">
       <p>
         Need access to Wi-Fi? Head over to the{' '}
         <Link to="/wifi">request page</Link>.
       </p>
-    </Wrapper>
+    </Wrapper> */}
     {/* <Countdown /> */}
     {/* <SocialFeed /> */}
   </Layout>

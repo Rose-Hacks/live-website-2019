@@ -13,6 +13,9 @@ export default class Agenda extends Component {
       if (parseInt(tokens[0]) > 12) {
         type = 'PM'
         tokens[0] = tokens[0] - 12
+      } else if (parseInt(tokens[0]) === 12) {
+        type = 'PM'
+        tokens[0] = 12
       } else {
         type = 'AM'
       }
@@ -39,7 +42,7 @@ export default class Agenda extends Component {
       <EventsContainer>
         {events.map(event => {
           return (
-            <EventItem>
+            <EventItem key={event.id} className={event.type.toLowerCase()}>
               <p>{this.processTime(event)}</p>
               <p>{event.title}</p>
               <p>{event.resourceId}</p>
@@ -66,7 +69,7 @@ const EventItem = styled.div`
 
   p {
     margin: 0;
-    color: black !important;
+    color: white !important;
   }
 
   p:nth-of-type(3) {
