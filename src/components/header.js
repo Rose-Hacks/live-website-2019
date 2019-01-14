@@ -39,6 +39,10 @@ const ActionStyles = css`
     background: rgb(140, 87, 125);
     color: #fff;
   }
+
+  @media (max-width: 400px) {
+    margin-left: 0px;
+  }
 `
 
 const ActionInternal = styled(Link)`

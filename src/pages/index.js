@@ -10,7 +10,13 @@ import { Link } from 'gatsby'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`event`, `live`, `portal`]} />
-    {/* <Header>Rose Hack 2019</Header> */}
+    <Header>Rose Hack 2019</Header>
+    <Wrapper style={{ marginBottom: `100px` }}>
+      <p>
+        👋 Hello! We'll have more info here on Saturday so make sure to return
+        here then.
+      </p>
+    </Wrapper>
     {/* <Wrapper className="showMobile">
       <p>
         Need access to Wi-Fi? Head over to the{' '}
