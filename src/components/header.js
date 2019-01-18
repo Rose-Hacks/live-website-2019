@@ -83,10 +83,10 @@ const NavItems = [
     name: 'Schedule',
     path: '/schedule',
   },
-  /* {
+  {
     name: 'Directions',
     path: '/directions',
-  }, */
+  },
   {
     name: 'Map',
     path: '/map',
@@ -102,16 +102,13 @@ const NavItems = [
   },
   {
     name: 'Slack',
-    path: 'https://rosehack2019.slack.com',
+    path:
+      'https://join.slack.com/t/rosehack2019/shared_invite/enQtNTIzNzM5NjAzMjY2LTQyODUyMjM1Yjk4Yjk5NjUwMWEwOTBlMzc4NjcxYjEzMTliNjc5Y2EzM2U0YjMwNjViODE1ZjQyNGQzN2RjNzc',
     classes: 'noMobile',
   },
-  // {
-  //   name: 'Code of Conduct',
-  //   path: '/code-of-conduct',
-  // },
   {
     name: 'Submit Project',
-    path: 'http://devpost.com',
+    path: 'https://rosehack2019.devpost.com',
     classes: 'noMobile',
   },
 ]
@@ -120,7 +117,6 @@ const Header = ({ siteTitle }) => (
   <Wrapper>
     <LogoContainer to="/">
       <LogoWrapper src={Logo} alt="" />
-      <h2>Rose Hack</h2>
     </LogoContainer>
     <ActionsWrapper>
       {NavItems.map(item => {
