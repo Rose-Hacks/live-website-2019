@@ -4,7 +4,7 @@ import Lottie from 'react-lottie'
 import animationData from './animation.json'
 
 const HeroContainer = styled.section`
-  background: linear-gradient(90deg, #574565, #27346a);
+  background: linear-gradient(190deg, #574565, #27346a);
   background-repeat: no-repeat;
   width: 100%;
 

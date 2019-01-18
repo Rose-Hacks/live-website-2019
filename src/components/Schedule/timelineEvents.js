@@ -57,7 +57,7 @@ export default [
   },
   {
     id: 8,
-    resourceId: 'Chung 144',
+    resourceId: 'Chung 141',
     title: 'iOS Development Workshop',
     start: new Date('1/19/2019 13:30'),
     end: new Date('1/19/2019 14:30'),
@@ -97,7 +97,7 @@ export default [
   },
   {
     id: 13,
-    resourceId: 'Chung 145',
+    resourceId: 'Chung 139',
     title: "MongoDB's Build a Web App with MongoDB Workshop",
     start: new Date('1/19/2019 16:30'),
     end: new Date('1/19/2019 17:30'),
@@ -201,7 +201,7 @@ export default [
   },
   {
     id: 26,
-    resourceId: 'Chung 145',
+    resourceId: 'Chung 139',
     title: 'Women in Tech Panel',
     start: new Date('1/20/2019 10:00'),
     end: new Date('1/20/2019 11:00'),
