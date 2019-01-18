@@ -130,7 +130,7 @@ export default [
   {
     id: 17,
     resourceId: 'Chung 142',
-    title: 'Group Therapy',
+    title: 'Discussion Group',
     start: new Date('1/19/2019 21:00'),
     end: new Date('1/19/2019 22:00'),
     type: 'Activity',
@@ -154,7 +154,7 @@ export default [
   {
     id: 20,
     resourceId: 'Chung 143',
-    title: "Ocean's 8 Movie Showing",
+    title: 'Meme your stress away',
     start: new Date('1/20/2019 01:30'),
     end: new Date('1/20/2019 03:00'),
     type: 'Activity',
