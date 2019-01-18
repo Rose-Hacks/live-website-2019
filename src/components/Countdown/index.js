@@ -143,25 +143,18 @@ export default class Countdown extends Component {
           You Have
         </CountdownDescription>
         <CountdownContainer>
-          {this.state.days !== 0 && (
-            <TimeItem background={COLORS.accent1}>
-              <h2>{this.addLeadingZeros(this.state.days)}</h2>
-              <p>days</p>
-            </TimeItem>
-          )}
-          {this.state.hours !== 0 ||
-            (this.state.days !== 0 && (
-              <TimeItem background={COLORS.accent2}>
-                <h2>{this.addLeadingZeros(this.state.hours)}</h2>
-                <p>hours</p>
-              </TimeItem>
-            ))}
-          {this.state.min !== 0 && (
-            <TimeItem background={COLORS.accent3}>
-              <h2>{this.addLeadingZeros(this.state.min)}</h2>
-              <p>minutes</p>
-            </TimeItem>
-          )}
+          <TimeItem background={COLORS.accent1}>
+            <h2>{this.addLeadingZeros(this.state.days)}</h2>
+            <p>days</p>
+          </TimeItem>
+          <TimeItem background={COLORS.accent2}>
+            <h2>{this.addLeadingZeros(this.state.hours)}</h2>
+            <p>hours</p>
+          </TimeItem>
+          <TimeItem background={COLORS.accent3}>
+            <h2>{this.addLeadingZeros(this.state.min)}</h2>
+            <p>minutes</p>
+          </TimeItem>
           <TimeItem background={COLORS.accent4}>
             <h2>{this.addLeadingZeros(this.state.sec)}</h2>
             <p>seconds</p>
