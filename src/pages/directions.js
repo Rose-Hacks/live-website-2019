@@ -14,6 +14,7 @@ const DirectionsPage = () => (
         height="600px"
         frameborder="0"
         allowfullscreen
+        title="map"
       />
     </Wrapper>
   </Layout>

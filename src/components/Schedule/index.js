@@ -2,7 +2,6 @@ import React from 'react'
 import Timeline, {
   defaultSubHeaderLabelFormats,
   TimelineMarkers,
-  CustomMarker,
   TodayMarker,
 } from 'react-calendar-timeline'
 import './schedule.css'
