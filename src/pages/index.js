@@ -8,22 +8,24 @@ import { Header, Wrapper } from '../styled'
 import { Link } from 'gatsby'
 
 function loop() {
-  var i,
-    n,
-    s = ''
+  if (typeof document !== 'undefined') {
+    var i,
+      n,
+      s = ''
 
-  const title = ['R', 'O', 'S', 'E', ' ', 'H', 'A', 'C', 'K']
+    const title = ['R', 'O', 'S', 'E', ' ', 'H', 'A', 'C', 'K']
 
-  for (i = 0; i < 10; i++) {
-    n = Math.floor(Math.sin(Date.now() / 200 + i / 2) * 4) + 4
+    for (i = 0; i < 10; i++) {
+      n = Math.floor(Math.sin(Date.now() / 200 + i / 2) * 4) + 4
 
-    s += String.fromCharCode(0x2581 + n)
-    s += title[i]
+      s += String.fromCharCode(0x2581 + n)
+      s += title[i]
+    }
+
+    document.title = s
+
+    setTimeout(loop, 50)
   }
-
-  document.title = s
-
-  setTimeout(loop, 50)
 }
 
 loop()
