@@ -65,7 +65,7 @@ const MentorItem = ({ mentor }) => {
         </SkillsContainer>
       </MentorCardWrapper>
 
-      <ContactButton>Message me!</ContactButton>
+      {/* <ContactButton>Message me!</ContactButton> */}
     </MentorCard>
   )
 }

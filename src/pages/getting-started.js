@@ -36,6 +36,35 @@ const GettingStartedPage = () => (
           <a href="https://cloud.google.com/free/">Google Cloud Platform</a> for
           servers, machine learning, and much more
         </li>
+        <li>
+          <a href="https://account.wolfram.com/redeem/RoseHack43HSC2019">
+            Wolfram Language
+          </a>{' '}
+          for everything from mathematics to natural language processing. You
+          get free access to Wolfram|One Access by participating at Rose Hack.
+        </li>
+        <li>
+          <a href="https://support.balsamiq.com/sales/cloudpromo/">
+            Balsamiq Cloud
+          </a>{' '}
+          for a rapid prototyping and design tool for your project. Use promo
+          code <strong>BQEDUREHK010519</strong> to redeem a 90-day extended
+          trial.
+        </li>
+        <li>
+          <a href="https://try.digitalocean.com/performance/?utm_source=rosehack&utm_medium=events">
+            Digital Ocean
+          </a>{' '}
+          for cloud hosting and infrastructure. As a Rose Hack participant, you
+          will get $100 starting credit.
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1oikfskEnzQoG-yTF9_RSqU3jCDsXsPIwrIzLo1ur1Kk/edit">
+            XYZ
+          </a>{' '}
+          for your .xyz domain name. You'll get a free domain name as a
+          participant!
+        </li>
       </ol>
     </Wrapper>
 

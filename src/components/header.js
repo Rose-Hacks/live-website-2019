@@ -106,11 +106,11 @@ const NavItems = [
       'https://join.slack.com/t/rosehack2019/shared_invite/enQtNTIzNzM5NjAzMjY2LTQyODUyMjM1Yjk4Yjk5NjUwMWEwOTBlMzc4NjcxYjEzMTliNjc5Y2EzM2U0YjMwNjViODE1ZjQyNGQzN2RjNzc',
     classes: 'noMobile',
   },
-  {
+  /* {
     name: 'Submit Project',
     path: 'https://rosehack2019.devpost.com',
     classes: 'noMobile',
-  },
+  }, */
 ]
 
 const Header = ({ siteTitle }) => (

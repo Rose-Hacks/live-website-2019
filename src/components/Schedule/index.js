@@ -57,7 +57,6 @@ const Schedule = () => {
   }
 
   processEvents(items)
-  console.log(events)
 
   return (
     <Wrapper>
@@ -66,10 +65,8 @@ const Schedule = () => {
         sidebarContent={'Location'}
         groups={groups}
         items={events}
-        // defaultTimeStart={moment('1/19/2019 8:00')}
-        // defaultTimeEnd={moment('1/20/2019 17:00')}
-        defaultTimeStart={moment('1/19/2019 7:00')}
-        defaultTimeEnd={moment('1/19/2019 10:00')}
+        defaultTimeStart={moment().add(-4, 'hours')}
+        defaultTimeEnd={moment().add(4, 'hours')}
         dragSnap
         lineHeight={64}
         minZoom={60 * 60 * 1000 * 4}
