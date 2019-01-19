@@ -19,12 +19,11 @@ class SponsorsPage extends Component {
           <Carousel
             autoplay={true}
             autoplayInterval={1000}
-            cellSpacing={100}
+            cellSpacing={300}
             disableKeyboardControls={true}
-            slidesToShow={7}
+            slidesToShow={4}
             withoutControls={true}
             wrapAround={true}
-            slideWidth="200px"
             cellAlign={'center'}
             vertical
             heightMode="max"
@@ -33,8 +32,6 @@ class SponsorsPage extends Component {
               <img
                 src={`${BASE_IMAGE_URL}/${s.public_id}`}
                 alt=""
-                style={{ order: s.order }}
-                className={s.class}
                 key={s.public_id}
               />
             ))}
