@@ -64,6 +64,11 @@ const SponsorsWrapper = styled(Wrapper)`
   .slider-frame {
     height: 100vh !important;
   }
+
+  .slider-slide > img {
+    width: 200px !important;
+    margin: 0 auto;
+  }
 `
 
 const HeroContainer = styled.section`
@@ -81,10 +86,6 @@ const HeroContainer = styled.section`
       position: absolute;
       bottom: -200px;
     }
-  }
-
-  svg {
-    /* width: 50% !important; */
   }
 `
 
