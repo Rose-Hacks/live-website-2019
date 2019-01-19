@@ -66,7 +66,7 @@ const SponsorsWrapper = styled(Wrapper)`
   }
 
   .slider-slide > img {
-    width: 200px !important;
+    width: 400px !important;
     margin: 0 auto;
   }
 `
