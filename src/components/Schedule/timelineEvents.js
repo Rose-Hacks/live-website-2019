@@ -104,14 +104,6 @@ export default [
     type: 'Workshop',
   },
   {
-    id: 14,
-    resourceId: 'Chung 143',
-    title: "Google's Tech Talk",
-    start: new Date('1/19/2019 16:30'),
-    end: new Date('1/19/2019 17:30'),
-    type: 'Workshop',
-  },
-  {
     id: 15,
     resourceId: 'Chung 142',
     title: "Auth0's Security Workshop",
