@@ -84,6 +84,11 @@ const NavItems = [
     path: '/schedule',
   },
   {
+    name: 'Sponsors',
+    path: '/sponsors',
+    classes: 'noMobile',
+  },
+  {
     name: 'Directions',
     path: '/directions',
   },
