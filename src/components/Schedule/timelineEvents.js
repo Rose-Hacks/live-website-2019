@@ -121,18 +121,18 @@ export default [
   },
   {
     id: 17,
-    resourceId: 'Chung 142',
+    resourceId: 'Chung 138',
     title: 'Discussion Group',
-    start: new Date('1/19/2019 21:00'),
-    end: new Date('1/19/2019 22:00'),
+    start: new Date('1/19/2019 22:00'),
+    end: new Date('1/19/2019 23:00'),
     type: 'Activity',
   },
   {
     id: 18,
-    resourceId: 'Chung 205/206',
+    resourceId: 'CHung 142',
     title: "MLH's Cup Stacking",
-    start: new Date('1/19/2019 23:00'),
-    end: new Date('1/20/2019 00:00'),
+    start: new Date('1/19/2019 21:00'),
+    end: new Date('1/20/2019 22:00'),
     type: 'Activity',
   },
   {
@@ -194,7 +194,7 @@ export default [
   {
     id: 26,
     resourceId: 'Chung 139',
-    title: 'Women in Tech Panel',
+    title: 'Women in Tech Discussion',
     start: new Date('1/20/2019 10:00'),
     end: new Date('1/20/2019 11:00'),
     type: 'Activity',
