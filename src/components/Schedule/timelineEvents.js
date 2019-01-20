@@ -121,7 +121,7 @@ export default [
   },
   {
     id: 17,
-    resourceId: 'Chung 138',
+    resourceId: 'Chung 205/206',
     title: 'Discussion Group',
     start: new Date('1/19/2019 22:00'),
     end: new Date('1/19/2019 23:00'),
@@ -129,7 +129,7 @@ export default [
   },
   {
     id: 18,
-    resourceId: 'CHung 142',
+    resourceId: 'Chung 205/206',
     title: "MLH's Cup Stacking",
     start: new Date('1/19/2019 21:00'),
     end: new Date('1/20/2019 22:00'),
@@ -145,7 +145,7 @@ export default [
   },
   {
     id: 20,
-    resourceId: 'Chung 143',
+    resourceId: 'Chung 205/206',
     title: 'Meme your stress away',
     start: new Date('1/20/2019 01:30'),
     end: new Date('1/20/2019 03:00'),

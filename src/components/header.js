@@ -96,11 +96,11 @@ const NavItems = [
     name: 'Map',
     path: '/map',
   },
-  {
+  /* {
     name: 'Mentors',
     path: '/mentors',
     classes: 'noMobile',
-  },
+  }, */
   {
     name: 'Wi-Fi',
     path: '/wifi',
