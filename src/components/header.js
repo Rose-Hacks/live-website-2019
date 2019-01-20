@@ -112,9 +112,8 @@ const NavItems = [
     classes: 'noMobile',
   },
   {
-    name: 'Submit Project',
-    path: 'https://rosehack2019.devpost.com',
-    classes: 'noMobile',
+    name: 'Demos',
+    path: '/demos',
   },
 ]
 
