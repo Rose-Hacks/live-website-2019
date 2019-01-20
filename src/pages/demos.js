@@ -230,6 +230,24 @@ const projects = [
     Total: '',
     Notes: '',
   },
+  {
+    table: 26,
+    title: 'school4cool',
+    'Round 1': '',
+    'Round 2': '',
+    'Round 3': '',
+    Total: '',
+    Notes: '',
+  },
+  {
+    table: 27,
+    title: "Gans N' Roses - Magic Music Maker",
+    'Round 1': '',
+    'Round 2': '',
+    'Round 3': '',
+    Total: '',
+    Notes: '',
+  },
 ]
 
 const DemosPage = () => (
