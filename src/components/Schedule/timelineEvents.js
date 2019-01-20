@@ -73,7 +73,7 @@ export default [
   },
   {
     id: 28,
-    resourceId: 'Chung 138',
+    resourceId: 'Chung 205/206',
     title: 'Demos',
     start: new Date('1/20/2019 13:00'),
     end: new Date('1/20/2019 14:30'),
