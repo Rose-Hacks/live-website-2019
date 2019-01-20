@@ -40,7 +40,14 @@ const IndexPage = () => (
         <Link to="/wifi">request page</Link>.
       </p>
     </Wrapper>
-    <Countdown />
+    <Wrapper>
+      <p>
+        Thanks so much for participating at Rose Hack 2019! Check out the
+        amazing projects created by the other participants on{' '}
+        <a href="https://rosehack2019.devpost.com/submissions">DevPost</a>.
+      </p>
+    </Wrapper>
+    {/* <Countdown /> */}
     <SocialFeed />
   </Layout>
 )
